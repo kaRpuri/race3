@@ -1,6 +1,0 @@
-setup.py
-race3/__init__.py
-race3.egg-info/PKG-INFO
-race3.egg-info/SOURCES.txt
-race3.egg-info/dependency_links.txt
-race3.egg-info/top_level.txt

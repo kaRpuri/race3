@@ -1,4 +1,0 @@
-Invoking command in '/home/kabir/F1_labs/src/race3/build/race3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/kabir/F1_labs/src/race3/build/race3 -- -j8 -l8
-Invoked command in '/home/kabir/F1_labs/src/race3/build/race3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --build /home/kabir/F1_labs/src/race3/build/race3 -- -j8 -l8
-Invoking command in '/home/kabir/F1_labs/src/race3/build/race3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/kabir/F1_labs/src/race3/build/race3
-Invoked command in '/home/kabir/F1_labs/src/race3/build/race3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble /usr/bin/cmake --install /home/kabir/F1_labs/src/race3/build/race3
