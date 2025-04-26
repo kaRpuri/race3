@@ -1,0 +1,477 @@
+[0.000000] (-) TimerEvent: {}
+[0.000271] (race3) JobQueued: {'identifier': 'race3', 'dependencies': OrderedDict()}
+[0.001375] (race3) JobStarted: {'identifier': 'race3'}
+[0.046003] (race3) JobProgress: {'identifier': 'race3', 'progress': 'cmake'}
+[0.047254] (race3) Command: {'cmd': ['/usr/bin/cmake', '/home/kabir/F1_labs/src/race3', '-DCMAKE_INSTALL_PREFIX=/home/kabir/F1_labs/src/race3/install/race3'], 'cwd': '/home/kabir/F1_labs/src/race3/build/race3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kabir'), ('PYTHONHASHSEED', '0'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/kabir/.mujoco/mujoco210/bin'), ('HOME', '/home/kabir'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/kabir/F1_labs/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2774'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/kabir/F1_labs/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'kabir'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kabir'), ('TERM', 'xterm-256color'), ('RMW_FASTRTPS_USE_SHM', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/kabir/anaconda3/condabin:/home/kabir/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kabir/.mujoco/mujoco210/bin'), ('SESSION_MANAGER', 'local/kabir-HP-Laptop-15s-eq0xxx:@/tmp/.ICE-unix/1928,unix/kabir-HP-Laptop-15s-eq0xxx:/tmp/.ICE-unix/1928'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1c2fa8ce_7cf0_405d_b0aa_ac020bed46b6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kabir/F1_labs/install/race3:/home/kabir/F1_labs/install/wall_follow:/home/kabir/F1_labs/install/safety_node:/home/kabir/F1_labs/install/pure_pursuit:/home/kabir/F1_labs/install/mpc:/home/kabir/F1_labs/install/lab7_pkg:/home/kabir/F1_labs/install/lab1_pkg:/home/kabir/F1_labs/install/gap_follow:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/kabir/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kabir/F1_labs/src/race3/build/race3'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/kabir/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kabir/F1_labs/install/race3/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/wall_follow/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/safety_node/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/mpc/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/lab7_pkg/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/lab1_pkg/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/gap_follow/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/f1tenth_gym_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kabir/F1_labs/install/race3:/home/kabir/F1_labs/install/wall_follow:/home/kabir/F1_labs/install/safety_node:/home/kabir/F1_labs/install/pure_pursuit:/home/kabir/F1_labs/install/mpc:/home/kabir/F1_labs/install/lab7_pkg:/home/kabir/F1_labs/install/lab1_pkg:/home/kabir/F1_labs/install/gap_follow:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble')]), 'shell': False}
+[0.099555] (-) TimerEvent: {}
+[0.200022] (-) TimerEvent: {}
+[0.300536] (-) TimerEvent: {}
+[0.301716] (race3) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400683] (-) TimerEvent: {}
+[0.501084] (-) TimerEvent: {}
+[0.518500] (race3) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.550350] (race3) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601232] (-) TimerEvent: {}
+[0.701924] (-) TimerEvent: {}
+[0.763776] (race3) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.778083] (race3) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.779338] (race3) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.780856] (race3) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.790087] (race3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.802130] (-) TimerEvent: {}
+[0.902676] (-) TimerEvent: {}
+[1.003209] (-) TimerEvent: {}
+[1.009344] (race3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.027640] (race3) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.028314] (race3) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.029177] (race3) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.079083] (race3) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.103346] (-) TimerEvent: {}
+[1.204127] (-) TimerEvent: {}
+[1.304882] (-) TimerEvent: {}
+[1.405590] (-) TimerEvent: {}
+[1.506524] (-) TimerEvent: {}
+[1.557366] (race3) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.607473] (-) TimerEvent: {}
+[1.707941] (-) TimerEvent: {}
+[1.808428] (-) TimerEvent: {}
+[1.909607] (-) TimerEvent: {}
+[1.931759] (race3) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.009698] (-) TimerEvent: {}
+[2.091997] (race3) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.108361] (race3) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.109841] (-) TimerEvent: {}
+[2.134477] (race3) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.176114] (race3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.209997] (-) TimerEvent: {}
+[2.227675] (race3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.310189] (-) TimerEvent: {}
+[2.364482] (race3) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.374764] (race3) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.410317] (-) TimerEvent: {}
+[2.510914] (-) TimerEvent: {}
+[2.611377] (-) TimerEvent: {}
+[2.649529] (race3) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.711533] (-) TimerEvent: {}
+[2.711855] (race3) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.813996] (-) TimerEvent: {}
+[2.821988] (race3) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.868870] (race3) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.914154] (-) TimerEvent: {}
+[3.014668] (-) TimerEvent: {}
+[3.048811] (race3) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.050865] (race3) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.114814] (-) TimerEvent: {}
+[3.215273] (-) TimerEvent: {}
+[3.223794] (race3) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.225548] (race3) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.315417] (-) TimerEvent: {}
+[3.344238] (race3) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.376949] (race3) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[3.415578] (-) TimerEvent: {}
+[3.417791] (race3) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[3.449162] (race3) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.488299] (race3) StdoutLine: {'line': b'-- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[3.515757] (-) TimerEvent: {}
+[3.533207] (race3) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[3.615922] (-) TimerEvent: {}
+[3.716525] (-) TimerEvent: {}
+[3.817104] (-) TimerEvent: {}
+[3.917551] (-) TimerEvent: {}
+[4.017965] (-) TimerEvent: {}
+[4.021292] (race3) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.118098] (-) TimerEvent: {}
+[4.218537] (-) TimerEvent: {}
+[4.256663] (race3) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.257184] (race3) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/kabir/F1_labs/src/race3/include;$<BUILD_INTERFACE:/home/kabir/F1_labs/src/race3/include>\n'}
+[4.257508] (race3) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.259814] (race3) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.265026] (race3) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.268287] (race3) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.283621] (race3) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.283867] (race3) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.287043] (race3) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.291950] (race3) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.318735] (-) TimerEvent: {}
+[4.323545] (race3) StdoutLine: {'line': b'-- Generating done\n'}
+[4.332870] (race3) StdoutLine: {'line': b'-- Build files have been written to: /home/kabir/F1_labs/src/race3/build/race3\n'}
+[4.358440] (race3) CommandEnded: {'returncode': 0}
+[4.359733] (race3) JobProgress: {'identifier': 'race3', 'progress': 'build'}
+[4.361344] (race3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kabir/F1_labs/src/race3/build/race3', '--', '-j8', '-l8'], 'cwd': '/home/kabir/F1_labs/src/race3/build/race3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kabir'), ('PYTHONHASHSEED', '0'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/home/kabir/.mujoco/mujoco210/bin'), ('HOME', '/home/kabir'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/kabir/F1_labs/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2774'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/kabir/F1_labs/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'kabir'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kabir'), ('TERM', 'xterm-256color'), ('RMW_FASTRTPS_USE_SHM', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/kabir/anaconda3/condabin:/home/kabir/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/kabir/.mujoco/mujoco210/bin'), ('SESSION_MANAGER', 'local/kabir-HP-Laptop-15s-eq0xxx:@/tmp/.ICE-unix/1928,unix/kabir-HP-Laptop-15s-eq0xxx:/tmp/.ICE-unix/1928'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1c2fa8ce_7cf0_405d_b0aa_ac020bed46b6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kabir/F1_labs/install/race3:/home/kabir/F1_labs/install/wall_follow:/home/kabir/F1_labs/install/safety_node:/home/kabir/F1_labs/install/pure_pursuit:/home/kabir/F1_labs/install/mpc:/home/kabir/F1_labs/install/lab7_pkg:/home/kabir/F1_labs/install/lab1_pkg:/home/kabir/F1_labs/install/gap_follow:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/kabir/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kabir/F1_labs/src/race3/build/race3'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/kabir/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kabir/F1_labs/install/race3/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/wall_follow/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/safety_node/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/mpc/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/lab7_pkg/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/lab1_pkg/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/gap_follow/local/lib/python3.10/dist-packages:/home/kabir/F1_labs/install/f1tenth_gym_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kabir/F1_labs/install/race3:/home/kabir/F1_labs/install/wall_follow:/home/kabir/F1_labs/install/safety_node:/home/kabir/F1_labs/install/pure_pursuit:/home/kabir/F1_labs/install/mpc:/home/kabir/F1_labs/install/lab7_pkg:/home/kabir/F1_labs/install/lab1_pkg:/home/kabir/F1_labs/install/gap_follow:/home/kabir/F1_labs/install/f1tenth_gym_ros:/opt/ros/humble')]), 'shell': False}
+[4.418940] (-) TimerEvent: {}
+[4.511425] (race3) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/race3.dir/src/race3.cpp.o\x1b[0m\n'}
+[4.519105] (-) TimerEvent: {}
+[4.619703] (-) TimerEvent: {}
+[4.720349] (-) TimerEvent: {}
+[4.820801] (-) TimerEvent: {}
+[4.921234] (-) TimerEvent: {}
+[5.021763] (-) TimerEvent: {}
+[5.122540] (-) TimerEvent: {}
+[5.223161] (-) TimerEvent: {}
+[5.323551] (-) TimerEvent: {}
+[5.424030] (-) TimerEvent: {}
+[5.524589] (-) TimerEvent: {}
+[5.625307] (-) TimerEvent: {}
+[5.726405] (-) TimerEvent: {}
+[5.826874] (-) TimerEvent: {}
+[5.927913] (-) TimerEvent: {}
+[6.028293] (-) TimerEvent: {}
+[6.128783] (-) TimerEvent: {}
+[6.229357] (-) TimerEvent: {}
+[6.329902] (-) TimerEvent: {}
+[6.430470] (-) TimerEvent: {}
+[6.530956] (-) TimerEvent: {}
+[6.631523] (-) TimerEvent: {}
+[6.731949] (-) TimerEvent: {}
+[6.832334] (-) TimerEvent: {}
+[6.932790] (-) TimerEvent: {}
+[7.033183] (-) TimerEvent: {}
+[7.133693] (-) TimerEvent: {}
+[7.234155] (-) TimerEvent: {}
+[7.334625] (-) TimerEvent: {}
+[7.435066] (-) TimerEvent: {}
+[7.535569] (-) TimerEvent: {}
+[7.636035] (-) TimerEvent: {}
+[7.736472] (-) TimerEvent: {}
+[7.836953] (-) TimerEvent: {}
+[7.937373] (-) TimerEvent: {}
+[8.037858] (-) TimerEvent: {}
+[8.138313] (-) TimerEvent: {}
+[8.238794] (-) TimerEvent: {}
+[8.339240] (-) TimerEvent: {}
+[8.439716] (-) TimerEvent: {}
+[8.540167] (-) TimerEvent: {}
+[8.640643] (-) TimerEvent: {}
+[8.741106] (-) TimerEvent: {}
+[8.842676] (-) TimerEvent: {}
+[8.943211] (-) TimerEvent: {}
+[9.043880] (-) TimerEvent: {}
+[9.144349] (-) TimerEvent: {}
+[9.244816] (-) TimerEvent: {}
+[9.345254] (-) TimerEvent: {}
+[9.445736] (-) TimerEvent: {}
+[9.546199] (-) TimerEvent: {}
+[9.646691] (-) TimerEvent: {}
+[9.724898] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:99:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKDTree\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.725620] (race3) StderrLine: {'line': b'   99 |         std::unique_ptr<\x1b[01;31m\x1b[KKDTree\x1b[m\x1b[K> kd_tree;\n'}
+[9.725902] (race3) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[9.726237] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:99:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.726441] (race3) StderrLine: {'line': b'   99 |         std::unique_ptr<KDTree\x1b[01;31m\x1b[K>\x1b[m\x1b[K kd_tree;\n'}
+[9.726686] (race3) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.726902] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:99:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[9.727116] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:109:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[9.727307] (race3) StderrLine: {'line': b'  109 | }\n'}
+[9.727517] (race3) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.727739] (race3) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[9.732465] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPurePursuit::PurePursuit()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.732795] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:28:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRace3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.733019] (race3) StderrLine: {'line': b'   28 |     PurePursuit() : Node(\x1b[01;31m\x1b[KRace3\x1b[m\x1b[K),\n'}
+[9.733205] (race3) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.743333] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:45:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.743750] (race3) StderrLine: {'line': b'   45 |         \x1b[01;31m\x1b[K}\x1b[m\x1b[K else{\n'}
+[9.743962] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.745553] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:50:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.745791] (race3) StderrLine: {'line': b'   50 |         \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[9.745955] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.746798] (-) TimerEvent: {}
+[9.753027] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:59:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKDTree\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.753353] (race3) StderrLine: {'line': b'   59 |         kd_tree = std::make_unique<\x1b[01;31m\x1b[KKDTree\x1b[m\x1b[K>(2, kd_tree_adaptor, nanoflann::KDTreeSingleIndexAdaptorParams(10));\n'}
+[9.753582] (race3) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[9.753824] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:59:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_unique<<expression error> >(int, PurePursuit::KDTreeAdaptor&, nanoflann::KDTreeSingleIndexAdaptorParams)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.754028] (race3) StderrLine: {'line': b'   59 |         kd_tree = \x1b[01;31m\x1b[Kstd::make_unique<KDTree>(2, kd_tree_adaptor, nanoflann::KDTreeSingleIndexAdaptorParams(10))\x1b[m\x1b[K;\n'}
+[9.754229] (race3) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.754740] (race3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[9.754938] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:1\x1b[m\x1b[K:\n'}
+[9.755126] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:961:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.755318] (race3) StderrLine: {'line': b'  961 |     \x1b[01;36m\x1b[Kmake_unique\x1b[m\x1b[K(_Args&&... __args)\n'}
+[9.755530] (race3) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.755746] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:961:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.755924] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:59:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.756147] (race3) StderrLine: {'line': b'   59 |         kd_tree = \x1b[01;31m\x1b[Kstd::make_unique<KDTree>(2, kd_tree_adaptor, nanoflann::KDTreeSingleIndexAdaptorParams(10))\x1b[m\x1b[K;\n'}
+[9.756378] (race3) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.756643] (race3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[9.756897] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:1\x1b[m\x1b[K:\n'}
+[9.757177] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:967:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.757378] (race3) StderrLine: {'line': b'  967 |     \x1b[01;36m\x1b[Kmake_unique\x1b[m\x1b[K(size_t __num)\n'}
+[9.757690] (race3) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.757893] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:967:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.758120] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:59:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.758307] (race3) StderrLine: {'line': b'   59 |         kd_tree = \x1b[01;31m\x1b[Kstd::make_unique<KDTree>(2, kd_tree_adaptor, nanoflann::KDTreeSingleIndexAdaptorParams(10))\x1b[m\x1b[K;\n'}
+[9.758525] (race3) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.758722] (race3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[9.758898] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:1\x1b[m\x1b[K:\n'}
+[9.759076] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:973:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99 (deleted)\n'}
+[9.759267] (race3) StderrLine: {'line': b'  973 |     \x1b[01;36m\x1b[Kmake_unique\x1b[m\x1b[K(_Args&&...) = delete;\n'}
+[9.759470] (race3) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.759661] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:973:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.759854] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:59:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.760031] (race3) StderrLine: {'line': b'   59 |         kd_tree = \x1b[01;31m\x1b[Kstd::make_unique<KDTree>(2, kd_tree_adaptor, nanoflann::KDTreeSingleIndexAdaptorParams(10))\x1b[m\x1b[K;\n'}
+[9.760214] (race3) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.760429] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:60:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[9.760641] (race3) StderrLine: {'line': b'   60 |         kd_tree\x1b[01;31m\x1b[K->\x1b[m\x1b[KbuildIndex();\n'}
+[9.760803] (race3) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[9.794965] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PurePursuit::loadWaypoints()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.795332] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:126:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.795546] (race3) StderrLine: {'line': b'  126 |         \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::string x_str, y_str;\n'}
+[9.795733] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[9.803146] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:127:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_str\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.803483] (race3) StderrLine: {'line': b"  127 |         std::getline(ss, \x1b[01;31m\x1b[Kx_str\x1b[m\x1b[K, ',');\n"}
+[9.803672] (race3) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.811316] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:128:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_str\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.811647] (race3) StderrLine: {'line': b"  128 |         std::getline(ss, \x1b[01;31m\x1b[Ky_str\x1b[m\x1b[K, ',');\n"}
+[9.811822] (race3) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.812676] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:\x1b[m\x1b[K At global scope:\n'}
+[9.812887] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:142:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPurePursuid\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[9.813057] (race3) StderrLine: {'line': b'  142 | void \x1b[01;31m\x1b[KPurePursuid\x1b[m\x1b[K::odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg){\n'}
+[9.813215] (race3) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.822417] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.822893] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:144:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprocess_pose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.823510] (race3) StderrLine: {'line': b'  144 |         \x1b[01;31m\x1b[Kprocess_pose\x1b[m\x1b[K(msg->pose.pose.position.x, msg->pose.pose.position.y, msg->pose.pose.orientation);\n'}
+[9.823866] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.824084] (race3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[9.824308] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[9.824614] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[9.824796] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[9.824965] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[9.825132] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[9.825297] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[9.825506] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[9.825686] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.825850] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[9.826007] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:8\x1b[m\x1b[K:\n'}
+[9.826170] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:146:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[9.826332] (race3) StderrLine: {'line': b'  146 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Error in odom_callback: %s", e.what());\n'}
+[9.826508] (race3) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.826688] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:146:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[9.826839] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:146:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.827026] (race3) StderrLine: {'line': b'  146 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error in odom_callback: %s", e.what());\n'}
+[9.827191] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.827347] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:146:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.827534] (race3) StderrLine: {'line': b'  146 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error in odom_callback: %s", e.what());\n'}
+[9.827720] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.827881] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:146:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[9.828037] (race3) StderrLine: {'line': b'  146 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error in odom_callback: %s", e.what());\n'}
+[9.828196] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.828379] (race3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[9.828576] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[9.828742] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[9.828899] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[9.829054] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[9.829205] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[9.829363] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[9.829578] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[9.829749] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[9.829916] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.830065] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[9.830215] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:8\x1b[m\x1b[K:\n'}
+[9.830387] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:146:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[9.830607] (race3) StderrLine: {'line': b'  146 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Error in odom_callback: %s", e.what());\n'}
+[9.830780] (race3) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.830956] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:146:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[9.831162] (race3) StderrLine: {'line': b'  146 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Error in odom_callback: %s", e.what());\n'}
+[9.831370] (race3) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.846979] (-) TimerEvent: {}
+[9.867371] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PurePursuit::process_pose(double, double, const Quaternion&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.867708] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:177:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[9.867890] (race3) StderrLine: {'line': b'  177 |         kd_tree\x1b[01;31m\x1b[K->\x1b[m\x1b[KknnSearch(query.data(), 1, &idx, &dist);\n'}
+[9.868059] (race3) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[9.947140] (-) TimerEvent: {}
+[9.955289] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:233:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kqualified-id in declaration before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.955703] (race3) StderrLine: {'line': b'  233 | void PurePursuit::publish_waypoints_markers\x1b[01;31m\x1b[K(\x1b[m\x1b[K) {\n'}
+[9.955928] (race3) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.956111] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:266:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.956383] (race3) StderrLine: {'line': b'  266 | int main(int argc, char** argv) \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[9.956704] (race3) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.956968] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:276:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[9.957214] (race3) StderrLine: {'line': b'  276 | }\n'}
+[9.957422] (race3) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.957687] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:158:103:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.957953] (race3) StderrLine: {'line': b'  158 | ouble car_x, double car_y, const geometry_msgs::msg::Quaternion& quat)\x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[9.958121] (race3) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.958281] (race3) StderrLine: {'line': b'\n'}
+[10.047317] (-) TimerEvent: {}
+[10.147868] (-) TimerEvent: {}
+[10.248428] (-) TimerEvent: {}
+[10.348857] (-) TimerEvent: {}
+[10.449303] (-) TimerEvent: {}
+[10.549786] (-) TimerEvent: {}
+[10.591771] (race3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:164\x1b[m\x1b[K,\n'}
+[10.592347] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[10.592592] (race3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:18\x1b[m\x1b[K:\n'}
+[10.592774] (race3) StderrLine: {'line': b'/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, 4, 4>; Src = Eigen::Transpose<Eigen::Matrix<double, 3, 3> >; Func = Eigen::internal::assign_op<double, double>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.592967] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:797:41:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Transpose<Eigen::Matrix<double, 3, 3> >; Derived = Eigen::Matrix<double, 4, 4>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.593222] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:594:19:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KEigen::PlainObjectBase<Derived>::PlainObjectBase(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Transpose<Eigen::Matrix<double, 3, 3> >; Derived = Eigen::Matrix<double, 4, 4>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.593409] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:423:29:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = Eigen::Transpose<Eigen::Matrix<double, 3, 3> >; _Scalar = double; int _Rows = 4; int _Cols = 4; int _Options = 0; int _MaxRows = 4; int _MaxCols = 4]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.593622] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:168:71:\x1b[m\x1b[K   required from here\n'}
+[10.593810] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: YOU_MIXED_MATRICES_OF_DIFFERENT_SIZES\n'}
+[10.593989] (race3) StderrLine: {'line': b'  175 |      \x1b[01;31m\x1b[K( \\\x1b[m\x1b[K\n'}
+[10.594150] (race3) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.594307] (race3) StderrLine: {'line': b'  176 | \x1b[01;31m\x1b[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \\\x1b[m\x1b[K\n'}
+[10.594476] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.594658] (race3) StderrLine: {'line': b'  177 | \x1b[01;31m\x1b[K    || (\\\x1b[m\x1b[K\n'}
+[10.594821] (race3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.594982] (race3) StderrLine: {'line': b'  178 | \x1b[01;31m\x1b[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.595144] (race3) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.595300] (race3) StderrLine: {'line': b'  179 | \x1b[01;31m\x1b[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.595473] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.595653] (race3) StderrLine: {'line': b'  180 | \x1b[01;31m\x1b[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \\\x1b[m\x1b[K\n'}
+[10.595812] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.595973] (race3) StderrLine: {'line': b'  181 | \x1b[01;31m\x1b[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.596128] (race3) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.596288] (race3) StderrLine: {'line': b'  182 | \x1b[01;31m\x1b[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.596466] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.596645] (race3) StderrLine: {'line': b'  183 | \x1b[01;31m\x1b[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\\\x1b[m\x1b[K\n'}
+[10.596819] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.596976] (race3) StderrLine: {'line': b'  184 | \x1b[01;31m\x1b[K       ) \\\x1b[m\x1b[K\n'}
+[10.597130] (race3) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.597290] (race3) StderrLine: {'line': b'  185 | \x1b[01;31m\x1b[K     )\x1b[m\x1b[K\n'}
+[10.597461] (race3) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~\x1b[m\x1b[K\n'}
+[10.597640] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.597796] (race3) StderrLine: {'line': b'   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(\x1b[01;36m\x1b[KX\x1b[m\x1b[K,#MSG);\n'}
+[10.598603] (race3) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.598782] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.598947] (race3) StderrLine: {'line': b'  194 |      \x1b[01;36m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K(TYPE0,TYPE1),\\\n'}
+[10.599104] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.599281] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.599472] (race3) StderrLine: {'line': b'  887 |   \x1b[01;36m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K(ActualDstTypeCleaned,Src)\n'}
+[10.599658] (race3) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.599821] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(((((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Matrix<double, 4, 4> >::ret) == 0) && (((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Transpose<Eigen::Matrix<double, 3, 3> > >::ret) == 0)) || ((((((int)Eigen::Matrix<double, 4, 4>::RowsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::Transpose<Eigen::Matrix<double, 3, 3> >::RowsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Matrix<double, 4, 4>::RowsAtCompileTime) == ((int)Eigen::Transpose<Eigen::Matrix<double, 3, 3> >::RowsAtCompileTime))) && (((((int)Eigen::Matrix<double, 4, 4>::ColsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::Transpose<Eigen::Matrix<double, 3, 3> >::ColsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Matrix<double, 4, 4>::ColsAtCompileTime) == ((int)Eigen::Transpose<Eigen::Matrix<double, 3, 3> >::ColsAtCompileTime)))))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[10.600008] (race3) StderrLine: {'line': b'  175 |      \x1b[01;36m\x1b[K( \\\x1b[m\x1b[K\n'}
+[10.600161] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.600321] (race3) StderrLine: {'line': b'  176 | \x1b[01;36m\x1b[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \\\x1b[m\x1b[K\n'}
+[10.600496] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.600680] (race3) StderrLine: {'line': b'  177 | \x1b[01;36m\x1b[K    || (\\\x1b[m\x1b[K\n'}
+[10.600836] (race3) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.600988] (race3) StderrLine: {'line': b'  178 | \x1b[01;36m\x1b[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.601150] (race3) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.601307] (race3) StderrLine: {'line': b'  179 | \x1b[01;36m\x1b[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.601485] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.601661] (race3) StderrLine: {'line': b'  180 | \x1b[01;36m\x1b[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \\\x1b[m\x1b[K\n'}
+[10.601819] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.601975] (race3) StderrLine: {'line': b'  181 | \x1b[01;36m\x1b[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.602137] (race3) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.602294] (race3) StderrLine: {'line': b'  182 | \x1b[01;36m\x1b[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.602470] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.602647] (race3) StderrLine: {'line': b'  183 | \x1b[01;36m\x1b[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\\\x1b[m\x1b[K\n'}
+[10.602826] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.602981] (race3) StderrLine: {'line': b'  184 | \x1b[01;36m\x1b[K       ) \\\x1b[m\x1b[K\n'}
+[10.603140] (race3) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.603293] (race3) StderrLine: {'line': b'  185 | \x1b[01;36m\x1b[K     )\x1b[m\x1b[K\n'}
+[10.603475] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~\x1b[m\x1b[K\n'}
+[10.603648] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.603828] (race3) StderrLine: {'line': b'   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(\x1b[01;36m\x1b[KX\x1b[m\x1b[K,#MSG);\n'}
+[10.603983] (race3) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.604136] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.604293] (race3) StderrLine: {'line': b'  194 |      \x1b[01;36m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K(TYPE0,TYPE1),\\\n'}
+[10.604472] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.604650] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.604815] (race3) StderrLine: {'line': b'  887 |   \x1b[01;36m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K(ActualDstTypeCleaned,Src)\n'}
+[10.604978] (race3) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.605134] (race3) StderrLine: {'line': b'/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>; Src = Eigen::Matrix<double, 4, 4>; Func = Eigen::internal::assign_op<double, double>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.605321] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:858:27:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type) [with Dst = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>; Src = Eigen::Matrix<double, 4, 4>; Func = Eigen::internal::assign_op<double, double>; typename Eigen::internal::enable_if<(! Eigen::internal::evaluator_assume_aliasing<Src>::value), void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.605516] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:836:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment(Dst&, const Src&) [with Dst = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>; Src = Eigen::Matrix<double, 4, 4>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.605712] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Assign.h:66:28:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<double, 4, 4>; Derived = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.605892] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kabir/F1_labs/src/race3/src/race3.cpp:208:25:\x1b[m\x1b[K   required from here\n'}
+[10.606054] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: YOU_MIXED_MATRICES_OF_DIFFERENT_SIZES\n'}
+[10.606216] (race3) StderrLine: {'line': b'  175 |      \x1b[01;31m\x1b[K( \\\x1b[m\x1b[K\n'}
+[10.606364] (race3) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.606549] (race3) StderrLine: {'line': b'  176 | \x1b[01;31m\x1b[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \\\x1b[m\x1b[K\n'}
+[10.606723] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.606886] (race3) StderrLine: {'line': b'  177 | \x1b[01;31m\x1b[K    || (\\\x1b[m\x1b[K\n'}
+[10.607036] (race3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.607197] (race3) StderrLine: {'line': b'  178 | \x1b[01;31m\x1b[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.607359] (race3) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.607549] (race3) StderrLine: {'line': b'  179 | \x1b[01;31m\x1b[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.607717] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.607875] (race3) StderrLine: {'line': b'  180 | \x1b[01;31m\x1b[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \\\x1b[m\x1b[K\n'}
+[10.608032] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.608193] (race3) StderrLine: {'line': b'  181 | \x1b[01;31m\x1b[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.608348] (race3) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.608526] (race3) StderrLine: {'line': b'  182 | \x1b[01;31m\x1b[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.608702] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.608865] (race3) StderrLine: {'line': b'  183 | \x1b[01;31m\x1b[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\\\x1b[m\x1b[K\n'}
+[10.609026] (race3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.609202] (race3) StderrLine: {'line': b'  184 | \x1b[01;31m\x1b[K       ) \\\x1b[m\x1b[K\n'}
+[10.609363] (race3) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.609553] (race3) StderrLine: {'line': b'  185 | \x1b[01;31m\x1b[K     )\x1b[m\x1b[K\n'}
+[10.609724] (race3) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~\x1b[m\x1b[K\n'}
+[10.609883] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.610045] (race3) StderrLine: {'line': b'   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(\x1b[01;36m\x1b[KX\x1b[m\x1b[K,#MSG);\n'}
+[10.610207] (race3) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.610366] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.610590] (race3) StderrLine: {'line': b'  194 |      \x1b[01;36m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K(TYPE0,TYPE1),\\\n'}
+[10.610758] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.610919] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.611104] (race3) StderrLine: {'line': b'  887 |   \x1b[01;36m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K(ActualDstTypeCleaned,Src)\n'}
+[10.611265] (race3) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.611424] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:177:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(((((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false> >::ret) == 0) && (((int)Eigen::internal::size_of_xpr_at_compile_time<Eigen::Matrix<double, 4, 4> >::ret) == 0)) || ((((((int)Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>::RowsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::Matrix<double, 4, 4>::RowsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>::RowsAtCompileTime) == ((int)Eigen::Matrix<double, 4, 4>::RowsAtCompileTime))) && (((((int)Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>::ColsAtCompileTime) == ((int)Eigen::Dynamic)) || (((int)Eigen::Matrix<double, 4, 4>::ColsAtCompileTime) == ((int)Eigen::Dynamic))) || (((int)Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>::ColsAtCompileTime) == ((int)Eigen::Matrix<double, 4, 4>::ColsAtCompileTime)))))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[10.611660] (race3) StderrLine: {'line': b'  175 |      \x1b[01;36m\x1b[K( \\\x1b[m\x1b[K\n'}
+[10.611823] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.611983] (race3) StderrLine: {'line': b'  176 | \x1b[01;36m\x1b[K        (int(Eigen::internal::size_of_xpr_at_compile_time<TYPE0>::ret)==0 && int(Eigen::internal::size_of_xpr_at_compile_time<TYPE1>::ret)==0) \\\x1b[m\x1b[K\n'}
+[10.612144] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.612306] (race3) StderrLine: {'line': b'  177 | \x1b[01;36m\x1b[K    || (\\\x1b[m\x1b[K\n'}
+[10.612481] (race3) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.612663] (race3) StderrLine: {'line': b'  178 | \x1b[01;36m\x1b[K          (int(TYPE0::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.612825] (race3) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.612986] (race3) StderrLine: {'line': b'  179 | \x1b[01;36m\x1b[K        || int(TYPE1::RowsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.613147] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.613307] (race3) StderrLine: {'line': b'  180 | \x1b[01;36m\x1b[K        || int(TYPE0::RowsAtCompileTime)==int(TYPE1::RowsAtCompileTime)) \\\x1b[m\x1b[K\n'}
+[10.613488] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.613670] (race3) StderrLine: {'line': b'  181 | \x1b[01;36m\x1b[K      &&  (int(TYPE0::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.613832] (race3) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.614014] (race3) StderrLine: {'line': b'  182 | \x1b[01;36m\x1b[K        || int(TYPE1::ColsAtCompileTime)==Eigen::Dynamic \\\x1b[m\x1b[K\n'}
+[10.614175] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.614335] (race3) StderrLine: {'line': b'  183 | \x1b[01;36m\x1b[K        || int(TYPE0::ColsAtCompileTime)==int(TYPE1::ColsAtCompileTime))\\\x1b[m\x1b[K\n'}
+[10.614517] (race3) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.614694] (race3) StderrLine: {'line': b'  184 | \x1b[01;36m\x1b[K       ) \\\x1b[m\x1b[K\n'}
+[10.614855] (race3) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K~~~\x1b[m\x1b[K\n'}
+[10.615015] (race3) StderrLine: {'line': b'  185 | \x1b[01;36m\x1b[K     )\x1b[m\x1b[K\n'}
+[10.615173] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~\x1b[m\x1b[K\n'}
+[10.615332] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.615516] (race3) StderrLine: {'line': b'   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert(\x1b[01;36m\x1b[KX\x1b[m\x1b[K,#MSG);\n'}
+[10.615712] (race3) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.615875] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:194:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.616040] (race3) StderrLine: {'line': b'  194 |      \x1b[01;36m\x1b[KEIGEN_PREDICATE_SAME_MATRIX_SIZE\x1b[m\x1b[K(TYPE0,TYPE1),\\\n'}
+[10.616201] (race3) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.616364] (race3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:887:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.616563] (race3) StderrLine: {'line': b'  887 |   \x1b[01;36m\x1b[KEIGEN_STATIC_ASSERT_SAME_MATRIX_SIZE\x1b[m\x1b[K(ActualDstTypeCleaned,Src)\n'}
+[10.616736] (race3) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.649972] (-) TimerEvent: {}
+[10.750472] (-) TimerEvent: {}
+[10.850912] (-) TimerEvent: {}
+[10.951385] (-) TimerEvent: {}
+[11.051879] (-) TimerEvent: {}
+[11.152305] (-) TimerEvent: {}
+[11.252804] (-) TimerEvent: {}
+[11.353273] (-) TimerEvent: {}
+[11.453709] (-) TimerEvent: {}
+[11.554124] (-) TimerEvent: {}
+[11.654576] (-) TimerEvent: {}
+[11.755430] (-) TimerEvent: {}
+[11.856331] (-) TimerEvent: {}
+[11.956846] (-) TimerEvent: {}
+[12.057794] (-) TimerEvent: {}
+[12.158731] (-) TimerEvent: {}
+[12.259194] (-) TimerEvent: {}
+[12.360094] (-) TimerEvent: {}
+[12.460995] (-) TimerEvent: {}
+[12.561886] (-) TimerEvent: {}
+[12.662820] (-) TimerEvent: {}
+[12.763586] (-) TimerEvent: {}
+[12.864340] (-) TimerEvent: {}
+[12.964838] (-) TimerEvent: {}
+[13.065269] (-) TimerEvent: {}
+[13.165728] (-) TimerEvent: {}
+[13.266218] (-) TimerEvent: {}
+[13.366609] (-) TimerEvent: {}
+[13.467042] (-) TimerEvent: {}
+[13.567390] (-) TimerEvent: {}
+[13.667790] (-) TimerEvent: {}
+[13.768216] (-) TimerEvent: {}
+[13.794621] (race3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/race3.dir/build.make:76: CMakeFiles/race3.dir/src/race3.cpp.o] Error 1\n'}
+[13.795116] (race3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/race3.dir/all] Error 2\n'}
+[13.795895] (race3) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.823043] (race3) CommandEnded: {'returncode': 2}
+[13.870552] (-) TimerEvent: {}
+[13.886529] (race3) JobEnded: {'identifier': 'race3', 'rc': 2}
+[13.897089] (-) EventReactorShutdown: {}

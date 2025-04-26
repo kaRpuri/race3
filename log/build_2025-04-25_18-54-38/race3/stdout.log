@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target race3[0m
+[  0%] Built target ament_cmake_python_copy_race3
+[ 50%] [32mBuilding CXX object CMakeFiles/race3.dir/src/race3.cpp.o[0m
+running egg_info
+writing race3.egg-info/PKG-INFO
+writing dependency_links to race3.egg-info/dependency_links.txt
+writing top-level names to race3.egg-info/top_level.txt
+reading manifest file 'race3.egg-info/SOURCES.txt'
+writing manifest file 'race3.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_race3_egg
