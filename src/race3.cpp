@@ -10,6 +10,8 @@
 #include "nav_msgs/msg/odometry.hpp"
 #include "ackermann_msgs/msg/ackermann_drive_stamped.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/pose_array.hpp"
+#include "geometry_msgs/msg/point_stamped.hpp"
 #include "visualization_msgs/msg/marker_array.hpp"
 #include "tf2_ros/transform_broadcaster.h"
 #include "tf2/LinearMath/Quaternion.h"
@@ -49,6 +51,8 @@ public:
 
         drive_pub = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("/drive", 10);
         marker_pub = this->create_publisher<visualization_msgs::msg::MarkerArray>("/waypoints_markers", 10);
+        goal_pub_arr = this->create_publisher<geometry_msgs::msg::PoseArray>("/goal_arr", 10);
+        goal_pub = this->create_publisher<geometry_msgs::msg::PointStamped>("/goal", 10);
 
         // Build KDTree only after waypoints are loaded
         if (!waypoints.empty()) {
@@ -70,6 +74,8 @@ private:
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub;
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr pose_sub;
     rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr drive_pub;
+    rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr goal_pub_arr;
+    rclcpp::Publisher<geometry_msgs::msg::PointStamped>::SharedPtr goal_pub;
     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr marker_pub;
     rclcpp::TimerBase::SharedPtr timer;
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr laser_sub;
@@ -122,7 +128,7 @@ private:
 };
 
 void PurePursuit::loadWaypoints() {
-    std::string csv_path = "/home/kabirpuri/f1ws/src/race3/src/final_points.csv";
+    std::string csv_path = "/home/shreyas/Documents/ESE6150_F1_Tenth/final-race-roboracer/src/ICRA_Roboracer/race3/src/final_points.csv";
     std::ifstream file(csv_path);
     
     if (!file.is_open()) {
@@ -241,20 +247,7 @@ void PurePursuit::process_pose(const geometry_msgs::msg::Quaternion& quat) {
        
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// LIDAR callback
 void PurePursuit::lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
     const std::vector<float>& ranges = msg->ranges;
     size_t num_ranges = ranges.size();
@@ -486,23 +479,49 @@ void PurePursuit::lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr ms
     
     // ----- 7. PURSUE SELECTED GOAL -----
     Eigen::Vector2d selected_goal = candidate_goals.col(closest_goal_idx);
-    Eigen::Vector2d translated = translate_point(car_pos, selected_goal);
+
+    geometry_msgs::msg::PoseArray goal_array_msg;
+    goal_array_msg.header.frame_id = "map";
+    goal_array_msg.header.stamp = this->now();
+    for (int i = 0; i < candidate_goals.cols(); ++i) {
+        geometry_msgs::msg::Pose pose;
+        pose.position.x = candidate_goals(0, i);
+        pose.position.y = candidate_goals(1, i);
+        pose.position.z = 0.0;
+        pose.orientation.w = 1.0;
+        pose.orientation.x = 0.0;
+        pose.orientation.y = 0.0;
+        pose.orientation.z = 0.0;
+        goal_array_msg.poses.push_back(pose);
+    }
+    goal_pub_arr->publish(goal_array_msg);
+
+    geometry_msgs::msg::PointStamped goal_msg;
+    goal_msg.header.frame_id = "map";
+    goal_msg.header.stamp = this->now();
+    goal_msg.point.x = selected_goal.x();
+    goal_msg.point.y = selected_goal.y();
+    goal_msg.point.z = 0.0;
+    goal_pub->publish(goal_msg);
+
+
+    // Eigen::Vector2d translated = translate_point(car_pos, selected_goal);
     
-    // Compute curvature and steering angle
-    double curvature = 2 * translated.y() / (L * L);
-    double steering_angle = P * curvature;
+    // // Compute curvature and steering angle
+    // double curvature = 2 * translated.y() / (L * L);
+    // double steering_angle = P * curvature;
     
-    // Compute speed with dynamic adjustment
-    ackermann_msgs::msg::AckermannDriveStamped drive_msg;
-    const double max_speed = 4.5;
-    const double min_speed = 2.0;
-    double speed_curvature = 2 * translated.y() / 1;
-    double speed = max_speed - ((max_speed - min_speed) * speed_curvature * 2);
-    speed = std::clamp(speed, min_speed, max_speed);
+    // // Compute speed with dynamic adjustment
+    // ackermann_msgs::msg::AckermannDriveStamped drive_msg;
+    // const double max_speed = 4.5;
+    // const double min_speed = 2.0;
+    // double speed_curvature = 2 * translated.y() / 1;
+    // double speed = max_speed - ((max_speed - min_speed) * speed_curvature * 2);
+    // speed = std::clamp(speed, min_speed, max_speed);
     
-    drive_msg.drive.speed = speed;
-    drive_msg.drive.steering_angle = steering_angle;
-    drive_pub->publish(drive_msg);
+    // drive_msg.drive.speed = speed;
+    // drive_msg.drive.steering_angle = steering_angle;
+    // drive_pub->publish(drive_msg);
 }
 
 
