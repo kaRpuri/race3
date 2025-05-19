@@ -25,7 +25,7 @@ public:
 
     PurePursuit() : Node("pure_pursuit_node"), 
                     sim(true), 
-                    L(1.6), // 1.72 for simulation, 2.7 on car considering slip
+                    L(2.5), // 1.72 for simulation, 2.7 on car considering slip
                     P(0.435), 
                     kd_tree_adaptor(waypoints)
     {
@@ -99,7 +99,7 @@ private:
         KDTreeAdaptor, 2, unsigned int>;
         
     std::unique_ptr<KDTree> kd_tree;
-    Eigen::Matrix<double, 2,13> candidate_goals;
+    Eigen::Matrix<double, 2,3> candidate_goals;
     double car_x, car_y;
     double car_yaw;
     Eigen::Vector2d car_pos;
@@ -117,12 +117,12 @@ private:
     void process_pose(const geometry_msgs::msg::Quaternion& quat);
     Eigen::Vector2d translate_point(const Eigen::Vector2d& curr, const Eigen::Vector2d& target);
     void publish_waypoints_markers();
-    void publish_candidate_markers(const Eigen::Matrix<double, 2,13> candidate_goals);
+    void publish_candidate_markers(const Eigen::Matrix<double, 2,3> candidate_goals);
     void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
 };
 
 void PurePursuit::loadWaypoints() {
-    std::string csv_path = "/home/kabir/F1_labs/src/race3/src/mpc_levine_1000.csv";
+    std::string csv_path = "/home/kabirpuri/f1ws/src/race3/src/final_points.csv";
     std::ifstream file(csv_path);
     
     if (!file.is_open()) {
@@ -233,7 +233,7 @@ void PurePursuit::process_pose(const geometry_msgs::msg::Quaternion& quat) {
     dir.normalize();
     
     idx = 0;
-    for (double d = -0.6; d<0.6+1e-6; d+=0.1) {
+    for (double d = -0.6; d<0.6+1e-6; d+=0.6) {
         candidate_goals.col(idx) = goal + d * dir;
         idx++;
     }
@@ -540,9 +540,9 @@ Eigen::Vector2d PurePursuit::translate_point(const Eigen::Vector2d& curr, const 
 
 
 
-void PurePursuit::publish_candidate_markers(const Eigen::Matrix<double, 2,13> candidate_goals){
+void PurePursuit::publish_candidate_markers(const Eigen::Matrix<double, 2,3> candidate_goals){
     visualization_msgs::msg::MarkerArray candidate_markers;
-    for (int i = 0; i < 13; ++i) {
+    for (int i = 0; i < 3; ++i) {
         visualization_msgs::msg::Marker marker;
         marker.header.frame_id = "map";
         marker.header.stamp = this->now();
